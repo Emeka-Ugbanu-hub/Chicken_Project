@@ -200,12 +200,12 @@ const Home = () => {
         </div>
       </div>
       <div className="giggles">
-        <div  className="marquee-content">
-        {GiggleNFTs.map((i, k) => (
-          <div className="marquee-item">
-            <img src={i} alt="" />
-          </div>
-        ))}
+        <div className="marquee-content">
+          {GiggleNFTs.map((i, k) => (
+            <div className="marquee-item">
+              <img src={i} alt="" />
+            </div>
+          ))}
         </div>
       </div>
     </div>
