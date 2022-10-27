@@ -8,14 +8,18 @@ x .header {
   padding-right: $container-x-padding;
 }
 
-menu {
+.show {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
+  
 }
-
+.none {
+    display:flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+} 
 .menu {
   display: flex;
   align-items: start;
@@ -124,10 +128,12 @@ input#openable {
 }
 
 @media screen and (max-width: 480px) {
-  menu {
-    display: block;
-    top: 2rem;
-    left: 1rem;
+    .none {
+        display: none;
+    }
+  .show {
+   
+    
   }
   .menu {
     display: block;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-scroll';
 
 import './asset/styles/layout.scss';
@@ -11,11 +11,13 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
+  const [open,setOpen] = useState(false)
+  
   return (
     <>
       <header>
         <div className="header">
-          <menu>
+          <menu className= {open ?'show':'none'}>
             <ul className="menu">
               <li>
                 <Link
@@ -79,12 +81,12 @@ const Layout = ({ children }: Props) => {
               </a>
             </div>
           </menu>
-          <div className="hamburger_box">
+          <div className='hamburger_box'>
             <input type="checkbox" id="openable" />
-            <label className="hamburger" htmlFor="openable">
-              <span></span>
-            </label>
-          </div>
+          <label className="hamburger" onClick={()=>setOpen(!open)} htmlFor="openable">
+            <span></span>
+          </label>
+            </div>
         </div>
       </header>
       <main>{children}</main>
