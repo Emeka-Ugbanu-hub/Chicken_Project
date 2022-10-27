@@ -45,7 +45,7 @@ const Home = () => {
             <br />
             <span> Stay Foolish.</span>
             <br />
-            <button>Wallet connect</button>
+            <button >Wallet connect</button>
           </div>
           <div className="quote">
             <img src="" alt="" />
@@ -123,6 +123,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+<div style={{position:'absolute',zIndex:2}}>
+  <h1>TEST</h1>
+</div>
+
       <div className="contract" id="contract">
         <div>
           <div></div>

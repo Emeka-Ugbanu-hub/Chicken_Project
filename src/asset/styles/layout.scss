@@ -1,11 +1,12 @@
-$header-height: 100px;
+$header-height: 90px;
 $container-x-padding: 50px;
 
-x .header {
+ .header {
   min-height: $header-height;
   width: 100%;
   padding-left: $container-x-padding;
   padding-right: $container-x-padding;
+  padding-top: 10px;
 }
 
 .show {

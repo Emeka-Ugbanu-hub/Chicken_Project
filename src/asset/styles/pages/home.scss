@@ -63,7 +63,7 @@
       bottom: 15px;
       right: 0;
       width: 50%;
-      height: 65%;
+      height: 72%;
       background: url(../../image/banner-cbg.png) no-repeat;
       background-size: cover;
       padding: 175px 60px 100px;
@@ -95,16 +95,23 @@
       button {
         padding: 15px 30px;
         margin-left: 70px;
-        margin-top: 0;
+        margin-top: 5px;
         background: #ffffff;
+        color: #000;
         font-size: 1.5em;
         border: 5px solid black;
         border-radius: 50px;
+        cursor: pointer;
         @media screen and (max-width: 480px) {
           padding: 5px 5px;
           font-size: 1em;
-          margin-top: 5px;
+          margin-top: 10px;
           margin-left: 10px;
+        }
+        &:hover{
+          background: #000000;
+          color: #fff;
+
         }
       }
     }
@@ -199,7 +206,7 @@
       @media screen and (max-width: 480px) {
         width: 100%;
         margin-left: -10%;
-        font-size: 1rem;
+        font-size: 12px;
       }
       &:after {
         position: absolute;
@@ -568,7 +575,7 @@
 }
 .marquee-content {
   display: flex;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
 .marquee-item {
   flex: 0 0 16vw;
