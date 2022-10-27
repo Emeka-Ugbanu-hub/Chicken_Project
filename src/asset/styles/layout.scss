@@ -4,9 +4,7 @@ $container-x-padding: 50px;
  .header {
   min-height: $header-height;
   width: 100%;
-  padding-left: $container-x-padding;
-  padding-right: $container-x-padding;
-  padding-top: 10px;
+  padding: $container-x-padding;
 }
 
 .show {

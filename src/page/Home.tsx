@@ -18,7 +18,8 @@ import ChickenNFT7 from '../asset/image/chicken-nft-7.png';
 import ChickenNFT8 from '../asset/image/chicken-nft-8.png';
 import ChickenNFT9 from '../asset/image/chicken-nft-9.png';
 import ChickenNFT10 from '../asset/image/chicken-nft-10.png';
-
+import Stack from '../asset/image/stack.png';
+import SecondStack from '../asset/image/secondstack.png';
 const GiggleNFTs = [
   ChickenNFT1,
   ChickenNFT2,
@@ -45,7 +46,7 @@ const Home = () => {
             <br />
             <span> Stay Foolish.</span>
             <br />
-            <button >Wallet connect</button>
+            <button>Wallet connect</button>
           </div>
           <div className="quote">
             <img src="" alt="" />
@@ -123,9 +124,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-<div style={{position:'absolute',zIndex:2}}>
-  <h1>TEST</h1>
-</div>
+
+      <img className="stack_img_one" src={Stack} />
+      <img src={SecondStack} className="stack_img_two" />
 
       <div className="contract" id="contract">
         <div>
