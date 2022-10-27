@@ -181,6 +181,10 @@
       }
 
       > img {
+        width: 80%;
+        @media screen and (max-width: 480px) {
+          width: 0%;
+        }
         &:last-child {
           margin-left: -60%;
         }
@@ -315,7 +319,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 200px 150px;
+      height: fit-content;
+      padding: 50px;
       right: 0;
       width: 50%;
       background: url(../../image/rm-cbg.png) no-repeat;
@@ -323,10 +328,10 @@
       background-size: 100% 100%;
       text-align: center;
       z-index: 1;
-      font-size: medium;
+      font-size: 1rem;
       @media screen and (max-width: 480px) {
         width: 100%;
-        padding: 250px 250px;
+        padding: 190px 250px;
         right: 4rem;
         font-size: 16px;
       }
@@ -620,12 +625,13 @@
   width: 500px;
   height: 500px;
   position: absolute;
-  transform: translate(1rem, 2rem);
+  margin-top: 28rem;
+  margin-left: 2rem;
   z-index: 2;
   transform: translateY(-25rem);
   @media screen and (max-width: 480px) {
     width: 200px;
     height: 200px;
-    transform: translate(3rem, 1.5rem);
+    margin-top: 25rem;
   }
 }
