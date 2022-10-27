@@ -38,7 +38,7 @@ const Home = () => {
       <div className="banner">
         <div>
           <div>
-            <img src={BanChicken} alt="" />
+            <img className="chicken" src={BanChicken} alt="" />
           </div>
           <div className="content">
             <span>Stay Hungry,</span>

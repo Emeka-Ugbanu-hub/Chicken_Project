@@ -2,3 +2,6 @@
 @import url(./scss/_fonts.scss);
 @import url(./scss/_initialize.scss);
 
+body {
+  overflow-x: hidden;
+}
